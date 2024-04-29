@@ -57,7 +57,9 @@ body {
 /* ============ HEADER STYLES ============ */
 .page-header {
         border-bottom: 1px solid #e7e9fc;
-        
+        box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 
+                0px 1px 1px rgba(46, 47, 66, 0.16), 
+                0px 1px 6px rgba(46, 47, 66, 0.08);
     }
 .header-container{
     display:flex;
@@ -91,7 +93,8 @@ body {
 .menu{
     display: flex;
     gap: 40px ;
-    padding: 24px 0; 
+    padding: 24px 0;
+    color: #404bbf;  
 }
 
 .menu-item{
@@ -111,13 +114,32 @@ body {
 .menu-link:active{
         color: #404bbf;
 }
-
+.menu-item a {
+    position: relative;
+    color: #404bbf;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+.menu-item a::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
+  }
 .address-list{
     display: flex;
     gap: 40px;
     padding: 24px 0;
     margin-left: 332px;
 }
+.adresss-item a {
+    position: relative;
+    color: #404bbf;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 .address-link{
     font-weight: 400;
     font-size: 16px;
@@ -136,12 +158,21 @@ body {
   
 
 /* ============ HERO IMAGE ============ */
- 
+
 
 .section-container{
     background-color: #2e2f42;
-    padding: 188px 0; 
+    padding: 188px 0;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/peopleoffice.jpg); 
+    max-width: 1440px;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover
+    
+
+
  } 
+
 .section-title {
     font-size: 56px;
     line-height: 1.07;
@@ -167,7 +198,11 @@ body {
     border-radius: 4px;
     min-width: 169px;
     height: 56px;
+    
 
+}
+.buy-now-btn{
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .buy-now-btn:hover,
 .buy-now-btn:focus {
