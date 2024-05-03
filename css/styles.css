@@ -266,11 +266,10 @@ body {
     background-color: #f4f4fd;
     border-radius: 4px;
     border: 1px solid #8e8f99;
-    margin-bottom: 8px;
     width: 264px;
     height: 112px;
     margin: 0 auto;
-    
+    margin-bottom: 8px;
 }
   
 .section-list-title{
@@ -279,7 +278,6 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-   
     margin-top: 8px;
     
     
@@ -422,6 +420,8 @@ color: #434455;
 }
 
 .descr-overlay {
+  letter-spacing: 0.02em;
+  line-height: 1.5;
   background-color: #4d5ae5;
   padding: 40px 32px;
   color: #f4f4fd;
@@ -433,6 +433,7 @@ color: #434455;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .portfolio-img {
   overflow: hidden;
@@ -492,6 +493,8 @@ color: #434455;
 .footer-descr {
   color: #f4f4fd;
   max-width: 264px;
+  line-height: 1.5;
+  letter-spacing: 0.02em; 
 }
 
 .footer-social-text {
